@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+</head>
+
+<body>
+<header>
+    <h1>Weather Dashboard</h1>
+</header>
+<main>
+    <div class="container">
+     <div class="row row-cols-2">
+         <div class="col">
+        <div class="input-group mb-3">
+         <span>Search for a City:</span><br>
+        <input type="text" id ="searchInput" class="form-control" placeholder="Search" aria-describedby="button-addon2">
+        <button onclick='saveSearch()' class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+     </div>
+        </div>
+            <div class="cityH"class="col">City History</div>
+            <div class="stats"class="col">
+                <h2 id="cityName"></h2>
+                <span class="temp">Temperature: </span>
+                <span class="hum">humidity: </span>
+                <span class="wind">wind speed: </span>
+                <span class="uv">UV Index: </span>
+            </div>
+        <div class="Fday"class="col">
+            <h2>5-Day Forecast</h2>
+            <div class="container" id="custCon">
+                <div class="fiveDayRow"class="row">
+                    <div class="fiveDayCol" class="col">
+                    <span class="sn5"id="fwf-date1">Date: </span>
+                    <span class="sn5"id="fwf-icon1">Icon: </span>
+                    <span class="sn5"id="fwf-temp1">Temp: </span>
+                    <span class="sn5"id="fwf-hum1">Humidity: </span>
+                </div>
+                <div class="fiveDayRow"class="row">
+                    <div class="fiveDayCol" class="col">
+                    <span class="sn5" id="fwf-date2">Date: </span>
+                    <span class="sn5" id="fwf-icon2">Icon</span>
+                    <span class="sn5" id="fwf-temp2">Temp:</span>
+                    <span class="sn5" id="fwf-hum2">Humidity:</span>
+                </div>
+                <div class="fiveDayRow"class="row">
+                    <div class="fiveDayCol" class="col">
+                    <span class="sn5" id="fwf-date3">Date: </span>
+                    <span class="sn5" id="fwf-icon3">Icon </span>
+                    <span class="sn5" id="fwf-temp3">Temp: </span>
+                    <span class="sn5" id="fwf-hum3">Humidity: </span>
+                </div>
+                <div class="fiveDayRow"class="row">
+                    <div class="fiveDayCol" class="col">
+                    <span class="sn5" id="fwf-date4">Date: </span>
+                    <span class="sn5" id="fwf-icon4">Icon: </span>
+                    <span class="sn5" id="fwf-temp4">Temp:</span>
+                    <span class="sn5" id="fwf-hum4">Humidity: </span>
+                </div>
+                <div class="fiveDayRow"class="row">
+                    <div class="fiveDayCol" class="col">
+                    <span class="sn5" id="fwf-date5">Date: </span>
+                    <span class="sn5" id="fwf-icon5">Icon: </span>
+                    <span class="sn5" id="fwf-temp5">Temp: </span>
+                    <span class="sn5" id="fwf-hum5">Humidity: </span>
+                </div>
+ 
+            </div>
+        </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+<script src="Assets/script.js"></script>
+</body>
+</html>
+
